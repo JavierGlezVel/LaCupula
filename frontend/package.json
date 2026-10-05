@@ -6,7 +6,8 @@
     "start": "./node_modules/.bin/ng serve",
     "build": "./node_modules/.bin/ng build",
     "watch": "./node_modules/.bin/ng build --watch --configuration development",
-    "test": "./node_modules/.bin/ng test"
+    "test": "./node_modules/.bin/ng test",
+    "test:ci": "ng test --watch=false"
   },
   "private": true,
   "packageManager": "npm@11.11.0",

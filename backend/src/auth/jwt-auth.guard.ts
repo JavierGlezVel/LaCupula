@@ -54,7 +54,11 @@ export class JwtAuthGuard implements CanActivate {
       const [rawName, ...rawValueParts] = cookie.trim().split('=');
 
       if (rawName === 'access_token') {
-        return decodeURIComponent(rawValueParts.join('='));
+        try {
+          return decodeURIComponent(rawValueParts.join('='));
+        } catch {
+          throw new UnauthorizedException('Cookie de autenticación inválida');
+        }
       }
     }
 
