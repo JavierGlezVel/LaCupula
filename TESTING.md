@@ -27,6 +27,7 @@ GitHub Actions ejecuta el mismo comando en cada push y pull request mediante `.g
 
 ## Cobertura actual
 
+- Repositorio: rechazo de archivos `.env` reales versionados y comprobación de que Git ignora sus variantes en cualquier directorio. Las plantillas `.env.example` se pueden versionar.
 - Integridad de negocio: conflictos de horarios e instructores, borrado de relaciones, snapshots de clases, reservas duplicadas, aforo, cuota activa, caducidad, cómputo conjunto de clases y eventos, semana permitida y cancelación por propietario.
 - Seguridad HTTP: JWT ausentes, inválidos, caducados o firmados con otra clave; cookies mal formadas; autorización administrativa; rechazo de campos extra y suplantación; aislamiento de reservas; CORS; cookies HttpOnly/Secure/SameSite; logout y límite de peticiones de login.
 - Credenciales: hash verificable de contraseña, normalización de registro, rechazo de duplicados, respuestas sin contraseña y mensaje genérico ante credenciales incorrectas.

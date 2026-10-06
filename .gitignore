@@ -8,6 +8,11 @@
 /bazel-out
 
 # Node
+# Local environment files (keep only example templates)
+.env
+.env.*
+!.env.example
+
 /node_modules
 **/node_modules/
 npm-debug.log
