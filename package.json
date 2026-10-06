@@ -2,7 +2,8 @@
   "name": "la-cupula-checks",
   "private": true,
   "scripts": {
-    "test": "npm --prefix backend run test:ci && npm --prefix backend run test:e2e -- --runInBand && npm --prefix frontend run test:ci",
+    "test": "npm run test:env && npm --prefix backend run test:ci && npm --prefix backend run test:e2e -- --runInBand && npm --prefix frontend run test:ci",
+    "test:env": "node scripts/check-env.cjs",
     "build": "npm --prefix backend run build && npm --prefix frontend run build",
     "check": "npm test && npm run build"
   }
